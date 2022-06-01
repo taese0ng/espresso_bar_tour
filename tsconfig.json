@@ -1,0 +1,20 @@
+{
+	"extends": "@tsconfig/svelte/tsconfig.json",
+
+	"include": ["src/**/*"],
+	"exclude": ["node_modules/*", "__sapper__/*", "public/*"],
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"~/*": ["src/*"],
+			"@components/*": ["src/components/*"],
+			"@pages/*": ["src/pages/*"],
+			"@apis/*": ["src/apis/*"],
+			"@assets/*": ["src/assets/*"],
+			"@interfaces/*": ["src/interfaces/*"],
+			"@routes/*": ["src/routes/*"],
+			"@utils/*": ["src/utils/*"],
+			"@constants/*": ["src/constants/*"]
+		}
+	}
+}

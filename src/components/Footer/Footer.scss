@@ -1,0 +1,35 @@
+@import "../../assets/scss/mixin.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 100px 0;
+
+  .wrapper {
+    border-radius: 100px;
+    padding: 10px 50px;
+    background-color: rgb(69, 77, 47);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    .with {
+      margin-top: 5px;
+      font-size: 1.5rem;
+      color: rgb(253, 250, 209);
+    }
+  }
+}
+
+@include mobile {
+  .container {
+    .wrapper {
+      padding: 10px 30px;
+      font-size: 1.5rem;
+      .with {
+        font-size: 1rem;
+      }
+    }
+  }
+}
